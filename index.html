@@ -42,42 +42,80 @@
         <p id="sub-headline">Let our AI assistance help you decide</p>
     </div>
 
+    <br>
     <section id="about">
         <h2>About NooTek</h2>
         <p>NooTek is a tech-focused e-commerce business specializing in selling and shipping high-quality laptops across Nigeria. Our platform enables customers to search, compare, and purchase top tech devices at the best prices from major retailers like Amazon and Jumia.</p>
         <p>We aim to bridge the gap between affordability and accessibility, ensuring customers get the best value for their money. Our objectives include expanding our product range, enhancing user experience, and offering exclusive deals.</p>
     </section>
     
-    <section>
+    <br>
+    <section class="form">
         <h2>Register Now</h2>
+    
         <form action="#" method="post">
+            
             <label for="name">Full Name:</label>
             <input type="text" id="name" name="name" placeholder="Enter your full name" required>
-            <br>
+            <br><br>
+    
             <label for="email">Email:</label>
             <input type="email" id="email" name="email" placeholder="Enter your email" required>
-            <br>
+            <br><br>
+    
             <label for="password">Password:</label>
             <input type="password" id="password" name="password" placeholder="Enter your password" required>
-            <br>
+            <br><br>
+    
             <label for="dob">Date of Birth:</label>
             <input type="date" id="dob" name="dob" required>
-            <br>
+            <br><br>
+    
             <label for="device">Preferred Laptop Brand:</label>
             <select id="device" name="device">
+                <option value="">Select a Brand</option>
                 <option value="hp">HP</option>
                 <option value="dell">Dell</option>
                 <option value="apple">Apple</option>
                 <option value="lenovo">Lenovo</option>
             </select>
-            <br>
-            <label>Newsletter Subscription:</label>
-            <input type="checkbox" id="subscribe" name="subscribe"> Subscribe to our newsletter
-            <br>
+            <br><br>
+    
+            <label>Gender:</label><br>
+            <div id="gender-choice">
+                <label for="male">Male</label><br>
+                <input type="radio" id="male" name="gender" value="male" required>
+                <label for="female">Female</label><br>
+                <input type="radio" id="female" name="gender" value="female" required>
+                <label for="other">Other</label>
+                <input type="radio" id="other" name="gender" value="other" required>
+            </div>
+            <br><br>
+    
+            <label>Interests:</label><br>
+            <div id="interest-choice">
+                <label for="coding">Coding</label><br>
+                <input type="checkbox" id="coding" name="interests[]" value="coding">
+                <label for="design">Design</label><br>
+                <input type="checkbox" id="design" name="interests[]" value="design">
+                <label for="gaming">Gaming</label><br>
+                <input type="checkbox" id="gaming" name="interests[]" value="gaming">
+                <label for="reading">Reading</label>
+                <input type="checkbox" id="reading" name="interests[]" value="reading">
+            </div>
+            <br><br>
+    
+            <div id="terms-container">
+                <label for="terms">Kindly accept our <a href="#">Terms</a> of agreement:</label>
+                <input type="checkbox" id="terms" name="terms">
+            </div>
+            <br><br>
+    
             <button type="submit">Sign Up</button>
         </form>
     </section>
     
+    <br>
     <section>
         <h2>Contact List</h2>
         <table border="1">
@@ -120,9 +158,15 @@
         </table>
     </section>
     
+    <br>
     <section>
         <h2>Explore Our Store</h2>
         <p>Click <a href="https://nootek.com" target="_blank">here</a> to visit our Online Shop and discover exclusive deals.</p>
     </section>
+    <br><br><br>
+
+    <footer>
+        <p>&copy Copyright - Emmanuel Obelenge | PLP FEB 2025</p>;
+    </footer>
 </body>
 </html>

@@ -137,29 +137,49 @@ nav, #nav-bar {
     font-size: 2rem;
 }
 
-/* Main Content */
-.container {
-    width: 90%;
-    max-width: 1200px;
-    margin: 20px auto;
-    background: white;
-    padding: 20px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
+/* Form */
+.form {
+    max-width: 600px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-/* Form */
 form {
     background: #ffffff;
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
 }
 
 form label {
     display: block;
     margin-top: 10px;
     font-weight: bold;
+}
+
+#gender-choice, #interest-choice, #terms-container {
+    display: inline-flex;
+    gap: 5px;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+
+}
+
+#gender-choice label, #interest-choice label {
+    margin-left: 30px;
+}
+
+#interest-choice {
+    margin: 0;
+}
+
+#terms-container input {
+   width: 20px;
+   margin-left: 10px;
 }
 
 form input, form select {
@@ -170,13 +190,16 @@ form input, form select {
     border-radius: 5px;
 }
 
-button {
+form button {
     background-color: #277fd7;
     color: white;
     border: none;
     padding: 5px;
     cursor: pointer;
     border-radius: 5px;
+    width: 30%;
+    font-size: 2rem;
+    margin-left: 35%;
 }
 
 button:hover {
@@ -202,6 +225,9 @@ th, td {
 th {
     background-color: #0073e6;
     color: white;
+}
+footer p {
+    text-align: center;
 }
 
 /* Responsive Design */
